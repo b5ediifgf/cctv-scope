@@ -10,10 +10,9 @@
 ## Как установить на Linux
 
 * Откройте терминал и введите `<pip install folium --break-system-packages>`
-* Затем `<git clone https://github.com/b5ediifgf_github/cctv-scope.git>`
+* Затем `<git clone https://github.com/b5ediifgf/cctv-scope.git>`
 * `<cd cctv-scope>`
 * `<python3 cctv_scope.py>`
-
 ## Как запустить на других устройствах
 
 ### 📱 Android (Termux)
