@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ca334735b7b7acc64e558102f7d91969 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ca334735b7b7acc64e558102f7d91969" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ca334735b7b7acc64e558102f7d91969 = L.map(
+                "map_ca334735b7b7acc64e558102f7d91969",
+                {
+                    center: [55.7558, 37.6173],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0f31c7773b108a20121c6120d34a6299 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0f31c7773b108a20121c6120d34a6299.addTo(map_ca334735b7b7acc64e558102f7d91969);
+        
+    
+            var marker_fedfe45496d204ff8f39b0e75f1135a5 = L.marker(
+                [55.758, 37.62],
+                {
+}
+            ).addTo(map_ca334735b7b7acc64e558102f7d91969);
+        
+    
+            var icon_ee848b4f9acd5fb7d57d85c764e780a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fc428968ffa98b8f7e5d8a42e03282b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d70da65e078aefe0bffecd2d92f36c07 = $(`<div id="html_d70da65e078aefe0bffecd2d92f36c07" style="width: 100.0%; height: 100.0%;"><b>CCTV Camera #1 (No Auth)</b></div>`)[0];
+                popup_2fc428968ffa98b8f7e5d8a42e03282b.setContent(html_d70da65e078aefe0bffecd2d92f36c07);
+            
+        
+
+        marker_fedfe45496d204ff8f39b0e75f1135a5.bindPopup(popup_2fc428968ffa98b8f7e5d8a42e03282b)
+        ;
+
+        
+    
+    
+                marker_fedfe45496d204ff8f39b0e75f1135a5.setIcon(icon_ee848b4f9acd5fb7d57d85c764e780a4);
+            
+    
+            var marker_c539eae58bed07f66222c9b5e54bb517 = L.marker(
+                [55.753, 37.61],
+                {
+}
+            ).addTo(map_ca334735b7b7acc64e558102f7d91969);
+        
+    
+            var icon_21eb449006cbc4a11eb838edcb31b79e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6c49d4ac4110991b3eab5dffa0afabf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c457453765d10f4b1931a93f451416f0 = $(`<div id="html_c457453765d10f4b1931a93f451416f0" style="width: 100.0%; height: 100.0%;"><b>CCTV Camera #2 (Default Pass)</b></div>`)[0];
+                popup_d6c49d4ac4110991b3eab5dffa0afabf.setContent(html_c457453765d10f4b1931a93f451416f0);
+            
+        
+
+        marker_c539eae58bed07f66222c9b5e54bb517.bindPopup(popup_d6c49d4ac4110991b3eab5dffa0afabf)
+        ;
+
+        
+    
+    
+                marker_c539eae58bed07f66222c9b5e54bb517.setIcon(icon_21eb449006cbc4a11eb838edcb31b79e);
+            
+    
+            var marker_59ed6c799d5ca984d0b2a1602a36c965 = L.marker(
+                [55.76, 37.6],
+                {
+}
+            ).addTo(map_ca334735b7b7acc64e558102f7d91969);
+        
+    
+            var icon_367d27fea9ff71bd382074c761d2ff15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a2742eda5f3105367d0ed35cde7e707 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4d7c58bfca17dd64db7fd534b337dad = $(`<div id="html_b4d7c58bfca17dd64db7fd534b337dad" style="width: 100.0%; height: 100.0%;"><b>IP Camera Route Main</b></div>`)[0];
+                popup_3a2742eda5f3105367d0ed35cde7e707.setContent(html_b4d7c58bfca17dd64db7fd534b337dad);
+            
+        
+
+        marker_59ed6c799d5ca984d0b2a1602a36c965.bindPopup(popup_3a2742eda5f3105367d0ed35cde7e707)
+        ;
+
+        
+    
+    
+                marker_59ed6c799d5ca984d0b2a1602a36c965.setIcon(icon_367d27fea9ff71bd382074c761d2ff15);
+            
+</script>
+</html>
