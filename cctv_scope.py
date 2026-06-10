@@ -3,7 +3,7 @@ import folium
 import requests
 
 print("="*50)
-print("🎯 CCTV-Scope: Глобальный OSINT-анализ IP")
+print(" CCTV-Scope: Глобальный OSINT-анализ IP")
 print("="*50)
 
 # Запрашиваем IP-адрес для анализа
@@ -22,10 +22,10 @@ try:
         isp = response.get("isp")
         
         print(f"[+] IP успешно локализован!")
-        print(f"    🌍 Страна: {country}")
-        print(f"    🏙️ Город: {city}")
-        print(f"    📡 Провайдер: {isp}")
-        print(f"    📍 Координаты: {lat}, {lon}")
+        print(f"     Страна: {country}")
+        print(f"     Город: {city}")
+        print(f"     Провайдер: {isp}")
+        print(f"     Координаты: {lat}, {lon}")
         print(f"\n[+] Генерация интерактивной кибер-карты...")
         
         # Создаем темную карту, центрированную ровно на координатах этого IP
@@ -45,8 +45,8 @@ try:
         output_file = "cctv_scope_map.html"
         my_map.save(output_file)
         
-        print(f"\n[🏆] УСПЕХ! Глобальная карта создана: {output_file}")
-        print("[💡] Открой этот файл в браузере Firefox, чтобы увидеть результат.")
+        print(f"\n УСПЕХ! Глобальная карта создана: {output_file}")
+        print(" Открой этот файл в браузере Firefox, чтобы увидеть результат.")
         print("="*50)
         
     else:
